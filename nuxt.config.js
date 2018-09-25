@@ -3,6 +3,12 @@ module.exports = {
     port: 3000,
     host: '0.0.0.0',
   },
+  watchers: {
+    webpack: {
+      aggregateTimeout: 300,
+      poll: true
+    }
+  },
   head: {
     title: 'starter',
     meta: [

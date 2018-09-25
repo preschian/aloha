@@ -10,10 +10,10 @@ config.dev = !(isProd);
 const nuxt = new Nuxt(config);
 
 // No build in production
-if (!isProd) {
-  const builder = new Builder(nuxt);
-  builder.build();
-}
+// if (!isProd) {
+//   const builder = new Builder(nuxt);
+//   builder.build();
+// }
 app.use(nuxt.render);
 app.listen(3000);
 console.log('Server is listening on http://localhost:3000');
