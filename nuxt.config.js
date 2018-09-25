@@ -6,8 +6,8 @@ module.exports = {
   watchers: {
     webpack: {
       aggregateTimeout: 300,
-      poll: true
-    }
+      poll: true,
+    },
   },
   head: {
     title: 'starter',
