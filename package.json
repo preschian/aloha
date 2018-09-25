@@ -4,7 +4,7 @@
   "description": "tes pipeline dan draft",
   "main": "index.js",
   "scripts": {
-    "dev": "nuxt"
+    "dev": "node ./server.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/preschian/aloha#readme",
   "dependencies": {
+    "express": "^4.16.3",
     "nuxt": "^2.0.0"
   }
 }
