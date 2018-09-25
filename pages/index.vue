@@ -1,3 +1,3 @@
 <template>
-  <h1>Aloha! heyho!</h1>
+  <h1>Aloha! ⭐️</h1>
 </template>
