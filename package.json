@@ -1,0 +1,22 @@
+{
+  "name": "aloha",
+  "version": "1.0.0",
+  "description": "tes pipeline dan draft",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nuxt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/preschian/aloha.git"
+  },
+  "author": "Preschian Febryantara",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/preschian/aloha/issues"
+  },
+  "homepage": "https://github.com/preschian/aloha#readme",
+  "dependencies": {
+    "nuxt": "^2.0.0"
+  }
+}
