@@ -2,10 +2,10 @@ version: '2'
 services:
   web:
     image: node:8
-    working_dir: "/app"
+    working_dir: '/app'
     volumes:
       - .:/app
       - /app/node_modules
     ports:
-      - "3000:3000"
-    command: yarn run dev
+      - '3000:3000'
+    command: bash -c "yarn install && yarn run dev"
