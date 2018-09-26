@@ -1,6 +1,6 @@
 import Vue from 'vue';
-import Index from './Index.vue';
+import index from './index.vue';
 
 new Vue({
-  render: h => h(Index),
+  render: h => h(index),
 }).$mount('#app');
