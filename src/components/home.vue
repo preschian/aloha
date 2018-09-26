@@ -4,6 +4,8 @@
     <button class="hero" @click="getHero(1)">Anti Mage</button>
     <button class="hero" @click="getHero(2)">Axe</button>
     <button class="hero" @click="getHero(3)">Bane</button>
+    <button class="hero" @click="getHero(4)">Bloodseeker</button>
+    <button class="hero" @click="getHero(5)">Crystal Maiden</button>
 
     <div v-if="loading" class="loading">loading...</div>
     <div v-else class="list">
