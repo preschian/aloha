@@ -22,17 +22,15 @@
 import axios from 'axios';
 import MockAdapter from 'axios-mock-adapter';
 
-if (process.env.MOCK_API === 'true') {
-  const mock = new MockAdapter(axios);
+const mock = new MockAdapter(axios);
 
-  mock.onAny('https://api.opendota.com/api/rankings').reply(200, {
-    rankings: [
-      { account_id: 1, personaname: 'Qwerty', score: '90' },
-      { account_id: 2, personaname: 'Asdfgh', score: '80' },
-      { account_id: 3, personaname: 'Zxcvbn', score: '70' },
-    ]
-  });
-}
+mock.onAny('https://api.opendota.com/api/rankings').reply(200, {
+  rankings: [
+    { account_id: 1, personaname: 'Qwerty', score: '90' },
+    { account_id: 2, personaname: 'Asdfgh', score: '80' },
+    { account_id: 3, personaname: 'Zxcvbn', score: '70' },
+  ]
+});
 
 export default {
   data() {
