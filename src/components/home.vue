@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <h2>Top players by hero ⭐️</h2>
+    <h2>Pull Request Error ⭐️</h2>
     <button class="hero" @click="getHero(1)">Anti Mage</button>
     <button class="hero" @click="getHero(2)">Axe</button>
     <button class="hero" @click="getHero(3)">Bane</button>
