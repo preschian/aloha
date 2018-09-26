@@ -12,6 +12,5 @@ RUN npm run build
 ARG HOSTNAME=1
 RUN npm run test
 
-# FROM busybox as PROD
+FROM busybox as PROD
 COPY --from=TEST /app/public /public
-RUN npm run start
