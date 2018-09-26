@@ -1,16 +1,12 @@
 FROM cypress/base:10 as TEST
 WORKDIR /app
 
-COPY package.json package-lock.json cypress.json ./
+COPY . .
 
 ENV CI=1
 RUN npm ci
 
 RUN npx cypress verify
-
-COPY cypress cypress
-
-COPY . .
 RUN npm run build
 
 ARG HOSTNAME=1
