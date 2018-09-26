@@ -7,5 +7,5 @@ services:
       - $PWD:/app
       - /app/node_modules
     ports:
-      - '3000:3000'
+      - '1234:1234'
     command: bash -c "yarn install && yarn start"

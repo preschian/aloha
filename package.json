@@ -6,7 +6,7 @@
   "scripts": {
     "start": "parcel index.html",
     "start:mock": "MOCK_API=true parcel index.html",
-    "build": "parcel build index.html"
+    "build": "parcel build index.html -d public/"
   },
   "repository": {
     "type": "git",

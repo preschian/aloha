@@ -1,7 +1,6 @@
 FROM mhart/alpine-node:8
 WORKDIR /app
-COPY package.json ./
+COPY package.json yarn.lock ./
 RUN yarn install
 COPY . .
-EXPOSE 3000
-CMD [ "yarn", "start" ]
+RUN yarn run build
