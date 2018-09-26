@@ -150,4 +150,6 @@ $RECYCLE.BIN/
 .cache
 .nuxt
 dist
+public
 cypress/screenshots
+cypress/videos
