@@ -2,6 +2,10 @@ FROM cypress/base:10 as TEST
 WORKDIR /app
 
 COPY package.json .
+COPY package-lock.json .
+
+ENV CI=1
+RUN npm ci
 
 RUN npx cypress verify
 
