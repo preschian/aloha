@@ -1,11 +1,9 @@
 version: '2'
 services:
   web:
-    image: node:8
-    working_dir: '/app'
+    build: .
     volumes:
       - $PWD:/app
       - /app/node_modules
     ports:
-      - '1234:1234'
-    command: bash -c "yarn install && yarn start"
+      - '5000:5000'
