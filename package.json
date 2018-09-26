@@ -7,7 +7,7 @@
     "dev": "parcel index.html",
     "dev:mock": "MOCK_API=true parcel index.html",
     "build": "parcel build ./index.html -d public/",
-    "start": "npm run build && serve public",
+    "start": "MOCK_API=true npm run build && serve public",
     "test": "start-test 5000 cy:run",
     "cy:open": "cypress open",
     "cy:run": "cypress run"
